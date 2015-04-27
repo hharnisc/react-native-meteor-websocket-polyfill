@@ -6,6 +6,8 @@
     "start": "node_modules/react-native/packager/packager.sh"
   },
   "dependencies": {
-    "react-native": "git@github.com:hharnisc/react-native.git#9aa046db655a988a5476651243919c976fa1068e"
+    "react-native": "git@github.com:hharnisc/react-native.git#9aa046db655a988a5476651243919c976fa1068e",
+    "ddp-client": "git@github.com:hharnisc/node-ddp-client.git#0dedf15cbd856a43ce29830cf4f5f4c728e5aa92",
+    "lodash": "3.6.0"
   }
 }
