@@ -28,16 +28,15 @@ var todos = React.createClass({
   },
 
   componentDidMount: function() {
-    var that = this;
     var ddpClient = new DDPClient({url: 'ws://localhost:3000/websocket'});
 
     ddpClient.connect(() => ddpClient.subscribe('publicLists'));
 
     // observe the lists collection
     var observer = ddpClient.observe("lists");
-    observer.added = () => that.updateRows(_.cloneDeep(_.values(ddpClient.collections.lists)));
-    observer.changed = () => that.updateRows(_.cloneDeep(_.values(ddpClient.collections.lists)));
-    observer.removed = () => that.updateRows(_.cloneDeep(_.values(ddpClient.collections.lists)));
+    observer.added = () => this.updateRows(_.cloneDeep(_.values(ddpClient.collections.lists)));
+    observer.changed = () => this.updateRows(_.cloneDeep(_.values(ddpClient.collections.lists)));
+    observer.removed = () => this.updateRows(_.cloneDeep(_.values(ddpClient.collections.lists)));
   },
 
   updateRows: function(rows) {
