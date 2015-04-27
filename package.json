@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "react-native": "git@github.com:hharnisc/react-native.git#9aa046db655a988a5476651243919c976fa1068e",
-    "ddp-client": "git@github.com:hharnisc/node-ddp-client.git#0dedf15cbd856a43ce29830cf4f5f4c728e5aa92",
+    "ddp-client": "0.1.0",
     "lodash": "3.6.0"
   }
 }
