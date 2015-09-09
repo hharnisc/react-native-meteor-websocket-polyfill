@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "react-native": "^0.6.0",
-    "ddp-client": "^0.1.1",
+    "ddp-client": "0.1.1",
     "lodash": "^3.6.0"
   }
 }
